@@ -109,8 +109,8 @@ public class Ex20_baserelacionalC {
         try {
             obj.Conexion();
 
-            //obj.insertarFilaPSt("p80", "adioos", 999);
-            obj.actuFilaPSt("p2", 543);
+            obj.insertarFilaPSt("p77", "adioos2", 99990);
+            obj.actuFilaPSt("p2", 999);
             obj.listarPSt();
 
             obj.Cerrar();
