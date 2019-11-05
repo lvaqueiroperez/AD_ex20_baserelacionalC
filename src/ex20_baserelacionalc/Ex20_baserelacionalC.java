@@ -84,12 +84,13 @@ public class Ex20_baserelacionalC {
     public void listarPSt() {
 
         try {
+            //USANDO RESULT SETS Y PREPARED STATEMENTS, SI VEMOS QUE NO VA PONER EL * COMO "nombreTabla.*"
             PreparedStatement pst = conn.prepareStatement("select produtos.* from produtos");
 
             ResultSet rs = pst.executeQuery();
 
             System.out.println("Codigo\tDesc\tPrezo");
-
+            //FORMA MÁS FÁCIL DE OBTENER RESULTADOS DE UN RS
             while (rs.next()) {
 
                 System.out.println(rs.getString(1) + "\t" + rs.getString(2) + "\t" + rs.getInt(3));
